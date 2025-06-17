@@ -9,8 +9,6 @@ class Jenis(models.Model):
     def __str__(self):
         return self.nama
 
-
-
 class Barang(models.Model):
     kdbrg = models.CharField(max_length=8)
     nama = models.CharField(max_length=75)

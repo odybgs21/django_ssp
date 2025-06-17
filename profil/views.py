@@ -1,9 +1,11 @@
 from django.shortcuts import render
+from . models import About
 
 # Create your views here.
 
 def home(request):
-    return render(request,'index.html')
+    about = About.objects.first()
+    return render(request,'index.html', {'about':about})
 
 def cerita(request):
     return render(request,'cerita.html')
