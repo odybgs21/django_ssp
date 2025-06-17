@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Barang,Jenis
+from .models import Barang,Jenis,About
 
 
 
@@ -15,3 +15,4 @@ class BarangAdmin(admin.ModelAdmin):
 
 admin.site.register(Barang, BarangAdmin)
 admin.site.register(Jenis)
+admin.site.register(About)
